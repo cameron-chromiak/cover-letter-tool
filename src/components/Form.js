@@ -2,55 +2,98 @@ import React, {Component} from 'react'
 
 class FormField extends Component{
   state ={
-    company:{
-      name_first: null,
-      name_last: null,
-      adress: null
-    },
-    recipient:{
-      name: null,
-      title: null
-    }
+      companyName: '',
+      street: '',
+      city: '',
+      suite: '',
+      state: '',
+      zip: '',
+      sir: 'Mr',
+      firstName: '',
+      lastName: '',
+      title: ''
+
   }
+
+  onFirstNameChange = (e) =>{
+    this.setState({firstName:e.target.value})
+  }
+  onLastNameChange = (e) =>{
+    this.setState({lastName:e.target.value})
+  }
+  onTitleChange = (e) =>{
+    this.setState({title:e.target.value})
+  }
+  onSelectChange = (e)=>{
+    this.setState({sir:e.target.value})
+  }
+  onCompanyName = (e) =>{
+    this.setState({companyName:e.target.value})
+  }
+  onStreetChange = (e) =>{
+    this.setState({street:e.target.value})
+  }
+  onCityChange = (e) =>{
+    this.setState({city:e.target.value})
+  }
+  onSuiteChange = (e) =>{
+    this.setState({suite:e.target.value})
+  }
+  onCompStateChange = (e) =>{
+    this.setState({state:e.target.value})
+  }
+  onCompZipChange = (e) =>{
+    this.setState({zip:e.target.value})
+  }
+
 
   render(){
     return(
     <div>
 
       <form className='ui form form-container'>
-        <div className="field">
-          <div className="field four wide">
-            <h5>Recipient Info</h5>
-            <input type="text" name="info[first-name]" placeholder="First Name"/>
+        <div className="field four wide">
+        <h5>Recipient Info</h5>
+        <div className='fields'>
+          <select onChange={this.onSelectChange} className="ui fluid dropdown four wide field">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+          </select>
+          <div className="twelve wide field">
+            <input onChange={this.onFirstNameChange} value={this.state.firstName}type="text"placeholder="First Name"/>
           </div>
-          <div className="field four wide">
-              <input type="text" name="info[last-name]" placeholder="Last Name"/>
+        </div>
+          <div className="field">
+              <input onChange={this.onLastNameChange} type="text" value={this.state.lastName} placeholder="Last Name"/>
           </div>
-          <div className="field four wide">
-              <input type="text" name="info[title]" placeholder="Last Name"/>
-          </div>
-          <div className="field four wide">
-              <input type="text" name="info[company-name]" placeholder="Last Name"/>
-          </div>
-          <div className="field four wide">
-              <input type="text" name="info[company-name]" placeholder="Last Name"/>
+          <div className="field">
+              <input onChange={this.onTitleChange} type="text"value={this.state.title} placeholder="Title"/>
           </div>
         </div>
 
-    <div class="field">
-        <div class="four wide field">
+    <div class="field four wide">
+        <div class="field">
           <h4>Company Info</h4>
-          <input type="text" name="company[title]" placeholder="Street Address"/>
+          <input onChange={this.onCompanyName} type="text" value={this.state.companyName} placeholder="Company Name"/>
         </div>
-        <div class="four wide field">
-          <input type="text" name="company[address]" placeholder="Apt #"/>
+        <div class="field">
+          <input onChange={this.onStreetChange} type="text" value={this.state.street} placeholder="Street Adress"/>
+        </div>
+        <div class="fields">
+          <div className="field eleven wide">
+            <input onChange={this.onCityChange} type="text" value={this.state.city} placeholder="City"/>
+          </div>
+            <div className="field five wide">
+              <input onChange={this.onSuiteChange} type="text" value={this.state.suite} placeholder="Floor, Suite #"/>
+            </div>
         </div>
     </div>
 
-     <div className="fields">
-     <div className='two wide field'>
+     <div className="fields four wide">
+     <div className='field two wide'>
        <h4>State</h4>
-      <select className="ui fluid dropdown">
+      <select onChange={this.onCompStateChange} value={this.state.state} className="ui fluid dropdown">
        <option value="">State</option>
          <option value="AL">Alabama</option>
          <option value="AK">Alaska</option>
@@ -107,7 +150,7 @@ class FormField extends Component{
       </div>
         <div  className='field two wide'>
           <h4>Zip Code</h4>
-          <input type="number" pattern="[0-9]{5}" maxLength="5" />
+          <input onChange={this.onCompZipChange} type="number" pattern="[0-9]{5}" maxLength="5" />
         </div>
     </div>
     </form>
