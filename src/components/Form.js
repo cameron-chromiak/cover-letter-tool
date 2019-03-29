@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import '../style/main.css'
+
 
 class FormField extends Component{
   state ={
@@ -45,14 +47,17 @@ class FormField extends Component{
   onCompZipChange = (e) =>{
     this.setState({zip:e.target.value})
   }
-
+  onFormSubmit = (e) =>{
+    e.preventDefault()
+    this.props.onFormSubmit(this.state)
+  }
 
   render(){
+    // console.log(this.props);
     return(
     <div>
-
-      <form className='ui form form-container'>
-        <div className="field four wide">
+      <form className='ui form form-container'onSubmit={this.onFormSubmit}>
+        <div className="field">
         <h5>Recipient Info</h5>
         <div className='fields'>
           <select onChange={this.onSelectChange} className="ui fluid dropdown four wide field">
@@ -72,15 +77,15 @@ class FormField extends Component{
           </div>
         </div>
 
-    <div class="field four wide">
-        <div class="field">
+    <div className="field">
+        <div className="field">
           <h4>Company Info</h4>
           <input onChange={this.onCompanyName} type="text" value={this.state.companyName} placeholder="Company Name"/>
         </div>
-        <div class="field">
+        <div className="field">
           <input onChange={this.onStreetChange} type="text" value={this.state.street} placeholder="Street Adress"/>
         </div>
-        <div class="fields">
+        <div className="fields">
           <div className="field eleven wide">
             <input onChange={this.onCityChange} type="text" value={this.state.city} placeholder="City"/>
           </div>
@@ -90,8 +95,8 @@ class FormField extends Component{
         </div>
     </div>
 
-     <div className="fields four wide">
-     <div className='field two wide'>
+     <div className="fields">
+     <div className='field'>
        <h4>State</h4>
       <select onChange={this.onCompStateChange} value={this.state.state} className="ui fluid dropdown">
        <option value="">State</option>
@@ -148,11 +153,12 @@ class FormField extends Component{
          <option value="WY">Wyoming</option>
         </select>
       </div>
-        <div  className='field two wide'>
+        <div  className='field'>
           <h4>Zip Code</h4>
           <input onChange={this.onCompZipChange} type="number" pattern="[0-9]{5}" maxLength="5" />
         </div>
     </div>
+      <button className='ui button primary'>Submit</button>
     </form>
   </div>
     )
