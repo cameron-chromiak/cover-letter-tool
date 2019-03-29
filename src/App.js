@@ -7,7 +7,7 @@ import Text from './components/Text'
 class App extends Component {
 
 
-  state:{
+  state={
     data: ''
   }
 
@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className='container'>
+        <div className='app-container'>
           <div className='left'><FormField  onFormSubmit={this.onFormSubmit} /></div>
           <div className='right'><Text formData={this.state}/></div>
         </div>

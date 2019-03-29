@@ -1,13 +1,16 @@
 
 .right{
-  margin-left: 25vw;
+  margin: 2vw 8vw 8vw 30vw;
+  width: 800px;
+
 }
 .left{
   height: 100vh;
   position: fixed;
   width: 25vw;
 }
-.container{
+.app-container{
   display: flex;
   flex-direction: column;
+  margin: 2rem;
 }

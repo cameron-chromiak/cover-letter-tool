@@ -1,22 +1,36 @@
 import React, {Component} from 'react'
 import '../style/main.css'
-
+import text from './coverLetter'
 class Text extends Component{
-  state:{}
 
+  state={
+    text: text
+  }
+
+componentDidUpdate(){
+  let {city,
+     companyName,
+     firstName,
+     lastName,
+     sir,
+     state,
+     street,
+     suite,
+     title,
+     zip} = this.props.formData.data
+
+}
+
+  formatText = () =>{
+    return(this.state.text.text)
+  }
 
   render(){
-    console.log(this.props);
+    console.log(this.state.text.text);
     return(
       <div>
-      <div class="ui grid">
-        <div class="four wide column">s</div>
-        <div class="four wide column">s</div>
-        <div class="four wide column">s</div>
-        <div class="four wide column">s</div>
-        <div class="two wide column"></div>
-        <div class="eight wide column"></div>
-        <div class="six wide column"></div>
+      <div className="ui segment">
+        {this.formatText()}
       </div>
       </div>
     )
