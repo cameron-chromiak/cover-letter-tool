@@ -69,31 +69,31 @@ class FormField extends Component{
     return(
     <div>
       <form className='ui form segment form-container'onSubmit={this.onFormSubmit}>
-        <div className="field">
+      <div className="field">
         <h5>Recipient Info</h5>
         <div className='fields'>
           <select onChange={this.onSelectChange} className="ui fluid dropdown four wide field">
             <option value="Mr.">Mr</option>
             <option value="Mrs.">Mrs</option>
             <option value="Ms.">Ms</option>
-            <option value="">None</option>
+            // <option value="">None</option>
           </select>
           <div className="twelve wide field">
-            <input onChange={this.onFirstNameChange} value={this.state.firstName}type="text"placeholder="First Name" required/>
+            <input onChange={this.onFirstNameChange} value={this.state.firstName}type="text"placeholder="Cameron" required/>
           </div>
         </div>
           <div className="field">
-              <input onChange={this.onLastNameChange} type="text" value={this.state.lastName} placeholder="Last Name"/>
+              <input onChange={this.onLastNameChange} type="text" value={this.state.lastName} placeholder="Chromiak"/>
           </div>
           <div className="field">
-              <input onChange={this.onTitleChange} type="text"value={this.state.title} placeholder="Title"/>
-          </div>
+            <input onChange={this.onTitleChange} type="text"value={this.state.title} placeholder="Director, HR"/>
         </div>
+      </div>
 
     <div className="field">
         <div className="field">
           <h4>Company Info</h4>
-          <input onChange={this.onCompanyName} type="text" value={this.state.companyName} placeholder="Company Name" required/>
+          <input onChange={this.onCompanyName} type="text" value={this.state.companyName} placeholder="Company ;)" required/>
         </div>
         <div className="field">
           <input onChange={this.onStreetChange} type="text" value={this.state.street} placeholder="Street Adress" required/>
@@ -109,7 +109,7 @@ class FormField extends Component{
     </div>
 
      <div className="fields">
-     <div className='field'>
+     <div className='nine wide field '>
        <h4>State</h4>
       <select onChange={this.onCompStateChange} value={this.state.state} className="ui fluid dropdown">
        <option value="">State</option>
@@ -166,7 +166,7 @@ class FormField extends Component{
          <option value="WY">Wyoming</option>
         </select>
       </div>
-        <div  className='field'>
+        <div  className='seven wide field'>
           <h4>Zip Code</h4>
           <input onChange={this.onCompZipChange} type="number" pattern="[0-9]{5}" maxLength="5" />
         </div>
