@@ -63,9 +63,10 @@ componentDidUpdate(){
 }
 
 
+
   formatText = () =>{
     return(
-      <pre>
+      <pre contenteditable="true">
       <p className='title-date'>{moment(Date.now()).format('LL')}</p>
       <p className='title-item'>{`${data.firstName} ${data.lastName}`}</p>
       <p className='title-item'>{`${data.title}`}</p>
@@ -76,7 +77,7 @@ componentDidUpdate(){
       <p>{`${data.sir}. ${data.lastName},`}</p>
 
       <p>
-        I came across the {`${data.jobTitle}`} opportunity on your company’s website. After viewing the position, requirements,
+        I came across the [JOB] opportunity on your company’s website. After viewing the position, requirements,
         and goals of {`${data.companyName}`}, I would be privileged to grow both the company’s impact and my skills as a developer.
         Opportunity and education are, what I believe, can make a career worth pursuing, and {`${data.companyName}`} offers both to its clients and employees.
         I am sure my experience and knowledge, along with my ambition, will be a valuable addition to the team.

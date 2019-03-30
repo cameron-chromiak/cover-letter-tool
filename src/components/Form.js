@@ -68,7 +68,7 @@ class FormField extends Component{
     // console.log(this.props);
     return(
     <div>
-      <form className='ui form form-container'onSubmit={this.onFormSubmit}>
+      <form className='ui form segment form-container'onSubmit={this.onFormSubmit}>
         <div className="field">
         <h5>Recipient Info</h5>
         <div className='fields'>
