@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cover-letter-tool/precache-manifest.69f8d19d51b8568ea686767228e03dd6.js"
+  "/cover-letter-tool/precache-manifest.a4821a4a49d7ee3e8b4cf9a41a3a8c9d.js"
 );
 
 workbox.clientsClaim();
