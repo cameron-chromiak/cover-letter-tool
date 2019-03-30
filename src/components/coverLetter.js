@@ -10,7 +10,7 @@ Cambridge, MA 02141
 
 Ms. English,
 
-I came across the Developer Intern opportunity on your company’s website. After viewing the position, requirements, and goals of Education First, I would be privileged to grow both the company’s impact and my skills as a developer. Opportunity and education are, what I believe, can make a life worth living, and EF offers both to its clients and employees. I am sure my experience and knowledge, along with my ambition, will be a valuable addition to the team.
+I came across the Developer Intern opportunity on your company’s website. After viewing the position, requirements, and goals of Education First, I would be privileged to grow both the company’s impact and my skills as a developer. Opportunity and education are, what I believe, can make a life worth living, and EF offers both to its clients and employees. I am sure my experience and knowledge, along with my ambition, will be a valuable addition to the team. 
 
 My path to becoming a web developer started when I was a teenager. I first started playing with static HTML pages and bash scripts. Since then I have studied and worked with many other languages, libraries, and paradigms. When I find a new technology, the urge to read or watch videos is always in my head, turning into something that keeps me up while I try to understand it.
 

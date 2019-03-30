@@ -1,4 +1,17 @@
 
+.title-item{
+  line-height: 0;
+}
+pre{
+  text-align: left;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+font-family: Roboto, arial;
+font-size: 14px;
+}
 .right{
   margin: 2vw 8vw 8vw 30vw;
   width: 800px;
