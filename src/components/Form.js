@@ -13,7 +13,10 @@ class FormField extends Component{
       sir: 'Mr',
       firstName: '',
       lastName: '',
-      title: ''
+      title: '',
+      email: '',
+      phone: '',
+      jobTitle:''
 
   }
 
@@ -47,6 +50,15 @@ class FormField extends Component{
   onCompZipChange = (e) =>{
     this.setState({zip:e.target.value})
   }
+  onUserEmailChange = (e) =>{
+    this.setState({email:e.target.value})
+  }
+  onUserPhoneChnange = (e) =>{
+    this.setState({phone:e.target.phone})
+  }
+  onJobTitleChange = (e) =>{
+    this.setState({jobTitle: e.target.value})
+  }
   onFormSubmit = (e) =>{
     e.preventDefault()
     this.props.onFormSubmit(this.state)
@@ -67,7 +79,7 @@ class FormField extends Component{
             <option value="">None</option>
           </select>
           <div className="twelve wide field">
-            <input onChange={this.onFirstNameChange} value={this.state.firstName}type="text"placeholder="First Name"/>
+            <input onChange={this.onFirstNameChange} value={this.state.firstName}type="text"placeholder="First Name" required/>
           </div>
         </div>
           <div className="field">
@@ -81,14 +93,14 @@ class FormField extends Component{
     <div className="field">
         <div className="field">
           <h4>Company Info</h4>
-          <input onChange={this.onCompanyName} type="text" value={this.state.companyName} placeholder="Company Name"/>
+          <input onChange={this.onCompanyName} type="text" value={this.state.companyName} placeholder="Company Name" required/>
         </div>
         <div className="field">
-          <input onChange={this.onStreetChange} type="text" value={this.state.street} placeholder="Street Adress"/>
+          <input onChange={this.onStreetChange} type="text" value={this.state.street} placeholder="Street Adress" required/>
         </div>
         <div className="fields">
           <div className="field eleven wide">
-            <input onChange={this.onCityChange} type="text" value={this.state.city} placeholder="City"/>
+            <input onChange={this.onCityChange} type="text" value={this.state.city} placeholder="City" required/>
           </div>
             <div className="field five wide">
               <input onChange={this.onSuiteChange} type="text" value={this.state.suite} placeholder="Floor, Suite #"/>
@@ -159,8 +171,27 @@ class FormField extends Component{
           <input onChange={this.onCompZipChange} type="number" pattern="[0-9]{5}" maxLength="5" />
         </div>
     </div>
+    <hr/>
+      <div className='fields'>
+        <div className='field'>
+        <input type="tel"
+           placeholder='Your Phone Number' onChange={this.onUserPhoneChnange} required/>
+        </div>
+        <div className="field">
+          <input onChange={this.onUserEmailChange} type="email" placeholder='Your email' required/>
+        </div>
+      </div>
+
+          <select onChange={this.onJobTitleChange} className="ui fluid dropdown six wide field" required>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Web Developer">Developer</option>
+            <option value="Software Engineer Intern">Software Engineer Intern</option>
+            <option value="Web Developer Intern">Web Developer Intern</option>
+          </select>
+
       <button className='ui button primary'>Submit</button>
-        <div className='small'>(click this twice)</div>
+        <div className='small'>Double Click</div>
     </form>
   </div>
     )

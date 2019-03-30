@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import FormField from './components/Form'
 import Text from './components/Text'
 

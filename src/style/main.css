@@ -1,4 +1,6 @@
-
+.small{
+  font-size: 16px;
+}
 .title-item{
   line-height: 0;
 }
