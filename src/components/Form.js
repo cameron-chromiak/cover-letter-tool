@@ -73,10 +73,10 @@ class FormField extends Component{
         <h5>Recipient Info</h5>
         <div className='fields'>
           <select onChange={this.onSelectChange} className="ui fluid dropdown four wide field">
+          <option value="">Select</option>
             <option value="Mr.">Mr</option>
             <option value="Mrs.">Mrs</option>
             <option value="Ms.">Ms</option>
-            // <option value="">None</option>
           </select>
           <div className="twelve wide field">
             <input onChange={this.onFirstNameChange} value={this.state.firstName}type="text"placeholder="Cameron" required/>
