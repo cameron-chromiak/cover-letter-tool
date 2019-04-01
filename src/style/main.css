@@ -20,9 +20,10 @@ font-size: 14px;
 
 }
 .left{
-  height: 100vh;
+  height: 90vh;
   position: fixed;
   width: 25vw;
+  overflow-y: scroll;
 }
 .app-container{
   display: flex;
