@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/cover-letter-tool/static/js/runtime~main.8d965b39.js"
   },
   {
-    "revision": "a7a9b7ce2ed16c0a358a",
+    "revision": "10eeb634288da26d2fd0",
     "url": "/cover-letter-tool/static/js/main.9865eeb2.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/cover-letter-tool/static/js/2.92c3716b.chunk.js"
   },
   {
-    "revision": "a7a9b7ce2ed16c0a358a",
-    "url": "/cover-letter-tool/static/css/main.37c1f6dd.chunk.css"
+    "revision": "10eeb634288da26d2fd0",
+    "url": "/cover-letter-tool/static/css/main.32ec58d2.chunk.css"
   },
   {
-    "revision": "716f68731df3137a2383a5a27ae99b57",
+    "revision": "9ed0060fe3fc3a1f5af9b84237353257",
     "url": "/cover-letter-tool/index.html"
   }
 ];

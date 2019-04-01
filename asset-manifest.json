@@ -1,5 +1,5 @@
 {
-  "main.css": "/cover-letter-tool/static/css/main.37c1f6dd.chunk.css",
+  "main.css": "/cover-letter-tool/static/css/main.32ec58d2.chunk.css",
   "main.js": "/cover-letter-tool/static/js/main.9865eeb2.chunk.js",
   "main.js.map": "/cover-letter-tool/static/js/main.9865eeb2.chunk.js.map",
   "runtime~main.js": "/cover-letter-tool/static/js/runtime~main.8d965b39.js",
@@ -7,7 +7,7 @@
   "static/js/2.92c3716b.chunk.js": "/cover-letter-tool/static/js/2.92c3716b.chunk.js",
   "static/js/2.92c3716b.chunk.js.map": "/cover-letter-tool/static/js/2.92c3716b.chunk.js.map",
   "index.html": "/cover-letter-tool/index.html",
-  "precache-manifest.0b43a3454099e1e3a4dbe27bcb6c0ee2.js": "/cover-letter-tool/precache-manifest.0b43a3454099e1e3a4dbe27bcb6c0ee2.js",
+  "precache-manifest.69a0cfea0141ec8ddef931a3f2bf3598.js": "/cover-letter-tool/precache-manifest.69a0cfea0141ec8ddef931a3f2bf3598.js",
   "service-worker.js": "/cover-letter-tool/service-worker.js",
-  "static/css/main.37c1f6dd.chunk.css.map": "/cover-letter-tool/static/css/main.37c1f6dd.chunk.css.map"
+  "static/css/main.32ec58d2.chunk.css.map": "/cover-letter-tool/static/css/main.32ec58d2.chunk.css.map"
 }
