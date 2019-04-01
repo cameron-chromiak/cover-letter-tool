@@ -183,6 +183,7 @@ class FormField extends Component{
       </div>
 
           <select onChange={this.onJobTitleChange} className="ui fluid dropdown six wide field" required>
+            <option value="job">Select One</option>
             <option value="Software Engineer">Software Engineer</option>
             <option value="Web Developer">Web Developer</option>
             <option value="Web Developer">Developer</option>
